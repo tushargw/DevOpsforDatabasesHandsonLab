@@ -22,7 +22,7 @@ jobs:
     - uses: actions/checkout@v1
     - uses: azure/login@v1
       with:
-        creds: ${{ secrets.ACTIONSDEPLOY }}
+        creds: ${{ secrets.TGW_CREDS }}
 
 # Provision a Azure sQL Database on Azure
     - name: Azure SQL Database creation
